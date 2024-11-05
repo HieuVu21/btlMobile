@@ -103,7 +103,7 @@ public class GameManger : MonoBehaviour
 
         if(birdPrefabs.Length > 0)
         {
-            int randIdx = Random.Range(0, birdPrefabs.Length - 1);
+            int randIdx = Random.Range(0, birdPrefabs.Length);
 
             Bird birdClone = Instantiate(birdPrefabs[randIdx], spawnPos, Quaternion.identity);
         }
