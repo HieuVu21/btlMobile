@@ -6,7 +6,7 @@ public class Bird : MonoBehaviour
 {
     public float moveSpeed;
     public float flySpeed;
-    private float downBound = -2;
+    private float downBound;
     public int point;
 
     public GameObject deathVFX;
@@ -17,6 +17,7 @@ public class Bird : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        downBound = -2;
     }
 
     // Start is called before the first frame update
